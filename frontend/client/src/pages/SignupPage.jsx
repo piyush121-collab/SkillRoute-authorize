@@ -30,10 +30,6 @@
 //   );
 // }
 
-
-
-
-
 import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
@@ -56,6 +52,7 @@ export default function SignupPage() {
 
   return (
     <div className="p-8">
+      <p style={{ color: "red", fontSize: "20px" }}></p>
       <h2 className="text-2xl font-bold mb-4">Sign Up</h2>
       <form onSubmit={handleSignup} className="flex flex-col gap-4 max-w-sm">
         <input
